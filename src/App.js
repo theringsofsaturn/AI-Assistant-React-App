@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
+import NewsCards from "./NewsCards/NewsCards";
 const alanKey =
   "20e4a9f477a935a34175767f24ec24792e956eca572e1d8b807a3e2338fdd0dc/stage";
 const App = () => {
@@ -20,6 +21,8 @@ const App = () => {
   return (
     <div>
       <h1>TEST PER AI</h1>
+      {/* Passing newsArcticles to NewsCards as a prop */}
+      <NewsCards articles={newsArticles} />
     </div>
   );
 };
